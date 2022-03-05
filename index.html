@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/jpeg;base64,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">
+    <title>Writting.com</title>
+
+    <script>
+
+        // text animation 
+
+        let j = 0;
+
+        // b=document.getElementById('content')
+
+        // clr = setInterval(ani(j), 1000);
+        function ani() {
+            // b.classList.remove('mt-36');
+            clr = setInterval(() => {
+                var ar = "Welcome User to Our Website!";
+                let a = document.getElementById('welcome').innerHTML;
+                console.log(j);
+                console.log(ar[0]);
+                a = document.getElementById('welcome').innerHTML = a + ar[j];
+                j++;
+                if (j >= 28) {
+                    clearInterval(clr);
+                }
+            }, 150);
+        }
+
+        setTimeout = (ani(), 10000);
+
+    </script>
+
+  <link rel="stylesheet" href="/assets/style.7fd2b35f.css">
+</head>
+
+<body class="bg-orange-300 dark:bg-zinc-900">
+    <nav class="bg-orange-600 relative py-2 dark:bg-black md:p-4 font-serif flex justify-between" id="nav_bar">
+        <!-- Hamburger -->
+        <div class="my-auto pl-3 flex md:hidden" id="Hamburger_Menu">
+            <ul class="flex flex-col space-y-[2px]">
+                <li></li>
+                <li class="h-0.5 w-4 bg-black dark:bg-white"></li>
+                <li class="h-0.5 w-4 bg-black dark:bg-white"></li>
+                <li class="h-0.5 w-4 bg-black dark:bg-white"></li>
+            </ul>
+        </div>
+
+        <div class="flex text-center bg-center md:justify-start justify-between mr-1">
+            <img src="data:image/jpeg;base64,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" class="h-4 md:h-8 md:px-3 my-auto px-1 rounded-2xl" alt="">
+            <div class="pt-1 text-sm my-auto cursor-default dark:text-white md:-mt-[1px] md:text-base">
+                Writting.com
+            </div>
+        </div>
+
+        <ul class="hidden mt-1 bg-center justify-between md:flex space-x-5">
+            <li
+                class="hover:bg-orange-500 dark:text-white dark:hover:underline visited:text-blue-800 dark:visited:text-blue-800 dark:active:text-white active:text-white dark:hover:bg-zinc-900">
+                <a href="./login.html">Login</a>
+            </li>
+            <li
+                class="hover:bg-orange-500 dark:text-white dark:hover:underline visited:text-blue-800 dark:visited:text-blue-800 dark:active:text-white active:text-white dark:hover:bg-zinc-900">
+                <a href="./signup.html">Signup</a>
+            </li>
+        </ul>
+
+        <ul class="mt-1 hidden md:flex space-x-5 justify-end">
+            <li
+                class="cursor-pointer hover:bg-orange-500 dark:text-white dark:hover:underline visited:text-blue-800 dark:visited:text-blue-800 dark:active:text-white active:text-white dark:hover:bg-zinc-900">
+                <a href="#">Home</a>
+            </li>
+            <li
+                class="cursor-pointer hover:bg-orange-500 dark:hover:underline dark:text-white visited:text-blue-800 dark:visited:text-blue-800 dark:active:text-white active:text-white dark:hover:bg-zinc-900">
+                <a href="#">About
+                    Us</a>
+            </li>
+            <li
+                class="cursor-pointer hover:bg-orange-500 dark:hover:underline dark:text-white visited:text-blue-800 dark:visited:text-blue-800 dark:active:text-white active:text-white dark:hover:bg-zinc-900">
+                <a href="#">Contact
+                    Us</a>
+            </li>
+            <li
+                class="cursor-pointer hover:bg-orange-500 dark:hover:underline dark:text-white visited:text-blue-800 dark:visited:text-blue-800 dark:active:text-white active:text-white dark:hover:bg-zinc-900">
+                <a href="#">Feedback</a>
+            </li>
+        </ul>
+
+        <!-- Triple Dot -->
+        <div class="my-auto pr-2 flex md:hidden" id="Triple_dot">
+            <ul class="flex mt-[17px] flex-col -space-y-5">
+                <li></li>
+                <li class="text-black dark:text-white font-bold">.</li>
+                <li class="text-black dark:text-white font-bold">.</li>
+                <li class="text-black dark:text-white font-bold">.</li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- hamburger list div -->
+    <div class="bg-orange-500 dark:bg-zinc-800 hidden w-full px-[3px] xs:text-lg py-1 mx-auto" id="ham">
+        <ul class="flex space-y-1 flex-col">
+            <li class="text-black dark:text-white dark:border-white border-2 w-fit py-[1px] px-2 cut border-black"
+                id="close1">X</li>
+            <li class="text-black dark:text-white"> <a href="#"> Home </a></li>
+            <li class="text-black dark:text-white"> <a href="#"> About Us</a></li>
+            <li class="text-black dark:text-white"> <a href="#"> Contact Us</a></li>
+            <li class="text-black dark:text-white"> <a href="#"> Feedback</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Triple Dot Div -->
+
+    <div id="t_dot"
+        class="hidden absolute top-0 right-0 bg-orange-500 dark:bg-zinc-800 h-fit w-2/5 p-2 text-sm xs:w-1/3 xs:text-lg">
+        <ul class="flex flex-col text-black dark:text-white">
+            <li class="font-bold ml-auto" id="close2">X</li>
+            <li class="ml-auto font-semibold"> <a href="./login.html"> Log in</a></li>
+            <li class="ml-auto font-semibold"> <a href="./signup.html"> Sign Up</a></li>
+        </ul>
+    </div>
+
+    <div class="text-sm mt-2 xxs:text-base sm:text-4xl text-center md:text-5xl lg:text-6xl xl:text-7xl font-bold dark:text-white"
+        id="welcome"></div>
+
+    <div class="xs:mx-8 my-8 md:px-4 xs:py-4 flex-col md:flex md:flex-row justify-between bg-white dark:bg-slate-900 text-red-600 dark:text-white"
+        id="content">
+
+        <div class="flex flex-col">
+
+            <p class="font-bold text-lg mt-4 p-4 px-6">
+                Hello Everyone! Thanks for visiting my Website! Here your will learn many things about coding!
+                Thanks for Visiting!
+            </p>
+
+            <p class="my-3 px-2 xs:p-4 text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit non doloremque perspiciatis,
+                mollitia
+                dolorem sed. Et hic assumenda doloribus facilis expedita labore maxime minus, reprehenderit soluta saepe
+                possimus aspernatur illo porro est repellat impedit cupiditate totam, at magnam exercitationem mollitia
+                veritatis perferendis! In harum suscipit dolorum reiciendis repellat dolore quisquam. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Sapiente deleniti veritatis nostrum repellat animi dicta debitis
+                expedita sint possimus ex! Excepturi, non earum soluta delectus sed nulla ipsam. Ea, corporis dicta!
+                Eaque magni inventore, voluptatum perferendis ut necessitatibus! Harum omnis laboriosam voluptate,
+                veritatis optio laborum repellendus esse dolores corporis dolorum? Sequi pariatur quibusdam ipsa ducimus
+                voluptas consequuntur, quasi, numquam fuga voluptatem, nemo nam odit. Architecto consequatur eum labore
+                explicabo iusto fuga earum atque recusandae sit ut odio rerum tenetur minus ad accusantium dolor
+                blanditiis nam odit, temporibus aperiam nisi quod incidunt. Quo nobis libero sed in sunt suscipit
+                dolore!
+            </p>
+
+        </div>
+
+        <img src="/assets/xps-dpbXgTh0Lac-unsplash.229c4877.jpg" class="w-11/12 xs:w-3/4 md:w-1/3 h-auto mx-auto py-3 lg:px-9"
+            alt="">
+    </div>
+
+    <script>
+
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Whenever the user explicitly chooses light mode
+        localStorage.theme = 'light';
+
+        // Whenever the user explicitly chooses dark mode
+        localStorage.theme = 'dark';
+
+        // Whenever the user explicitly chooses to respect the OS preference
+        localStorage.removeItem('theme');
+
+        //taking info from html by id
+
+        ab = document.getElementById('close1');
+        ac = document.getElementById('close2');
+        aa = document.getElementById("ham");
+        tt = document.getElementById("nav_bar");
+        tm = document.getElementById('t_dot');
+        tn = document.getElementById('Hamburger_Menu');
+        td = document.getElementById('Triple_dot');
+
+        // creating hamburger menu
+
+        const clicked = () => {
+            tt.classList.add("hidden");
+            aa.classList.remove("hidden");
+
+        }
+
+        tn.addEventListener('click', clicked);
+
+        // close button of hamburger menu
+
+        ab.addEventListener('click', function () {
+            tt.classList.remove("hidden");
+            aa.classList.add("hidden");
+        });
+
+        // creating 3 dots menu
+
+        function tt3d() {
+            // tt.classList.add("hidden");
+            tm.classList.remove("hidden");
+        }
+
+        td.addEventListener('click', tt3d);
+
+        // close button of 3 dots menu
+
+        ac.addEventListener('click', function () {
+            tt.classList.remove("hidden");
+            tm.classList.add("hidden");
+        });
+
+    </script>
+</body>
+
+</html>
